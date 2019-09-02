@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toplayout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_marginRight="@dimen/dp25"
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey17"
+                android:textSize="@dimen/sp12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/phoneTxtView"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/icon_about_phone"
+                android:drawablePadding="13dp"
+                android:gravity="center_vertical"
+                android:text="057687011819"
+                android:textColor="#6f6f6f"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/qqTxtView"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/icon_about_qq"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:text="2147620158"
+                android:textColor="#6f6f6f"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/weChatTxtView"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/icon_about_wechat"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="公众号  kpzgwzd"
+                android:textColor="#6f6f6f"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/qrCodeImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_about_qr_code" />
+
+            <TextView
+                android:id="@+id/versionTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="V5.0.0"
+                android:textColor="#6f6f6f"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

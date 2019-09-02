@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="13dp">
+
+        <LinearLayout
+            android:id="@+id/ll_canshu_qiye"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_canshu_type"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:text="生产企业"
+                android:textColor="@color/text102"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_canshu_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="sdsdsds"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_divider"
+            android:id="@+id/view3"
+            android:visibility="visible"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

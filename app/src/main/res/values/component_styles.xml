@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/sp17</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TabLayoutTextStyles">
+        <item name="android:textSize">@dimen/sp10</item>
+    </style>
+</resources>

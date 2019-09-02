@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarImgView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/default_header_icon"
+            />
+
+        <ImageView
+            android:id="@+id/picImgView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/default_bg_img_loading"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:id="@+id/infoReLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_toRightOf="@+id/avatarImgView"
+            android:layout_toLeftOf="@+id/picImgView"
+            >
+
+            <TextView
+                android:id="@+id/authorTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/sp13"
+                android:textColor="#9B9B9B"
+                android:text="意外意外"
+                />
+
+            <TextView
+                android:id="@+id/timeStampTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/authorTxtView"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/sp12"
+                android:textColor="#9B9B9B"
+                android:text="4小时前"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/contentTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/picImgView"
+            android:layout_toRightOf="@+id/avatarImgView"
+            android:layout_below="@+id/infoReLay"
+            android:textSize="@dimen/sp12"
+            android:textColor="#4a4a4a"
+            android:text="期望的群期望的群期望的群"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="@dimen/sp14"
+        android:textColor="#333"
+        android:padding="@dimen/dp16"
+        android:text="1.拥护中国共产党，遵纪守法，诚信经营，公平买卖"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="@dimen/sp14"
+        android:textColor="#333"
+        android:padding="@dimen/dp16"
+        android:text="2.提交以下材料"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#666"
+        android:layout_marginLeft="@dimen/dp20"
+        android:padding="@dimen/dp8"
+        android:text="a.身份证正反面照片"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#666"
+        android:layout_marginLeft="@dimen/dp20"
+        android:padding="@dimen/dp8"
+        android:text="b.手持正面身份证照片"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#666"
+        android:layout_marginLeft="@dimen/dp20"
+        android:padding="@dimen/dp8"
+        android:text="c.营业执照，行业经营许可证照片"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#666"
+        android:layout_marginLeft="@dimen/dp20"
+        android:padding="@dimen/dp8"
+        android:text="d.生产经营场所的真实照片"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#666"
+        android:layout_marginLeft="@dimen/dp20"
+        android:padding="@dimen/dp8"
+        android:text="e.联系地址，联系人，联系电话"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="@dimen/sp14"
+        android:textColor="#333"
+        android:padding="@dimen/dp16"
+        android:text="3.入驻流程，由申请人在手机端提交以上资料，会在2-3个工作日，通知您审核结果"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

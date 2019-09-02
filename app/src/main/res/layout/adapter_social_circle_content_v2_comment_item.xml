@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="commentLinLay"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/sp16"
+            android:text="隔壁老王："
+            android:tag="commentNickNameTxtView"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/sp16"
+            android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容"
+            android:tag="commentContentTxtView"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#f8f8f8"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:tag="commentReplyLinLay"
+        android:visibility="gone"
+        >
+
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+        <include layout="@layout/adapter_social_circle_content_v2_comment_reply_item"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"
+        android:layout_marginTop="10dp"
+        android:tag="lineView"
+        />
+
+</LinearLayout>

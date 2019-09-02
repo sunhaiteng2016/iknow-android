@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InfiniteIndicatorLayout">
+        <attr name="indicator_type" format="enum">
+            <enum name="indicator_default" value="0"/>
+            <enum name="indicator_anim_circle" value="1"/>
+            <enum name="indicator_anim_line" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DiscreteScrollView">
+        <attr name="dsv_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="NineGridView">
+        <attr name="ngv_singleImageSize" format="dimension"/>
+        <attr name="ngv_singleImageRatio" format="float"/>
+        <attr name="ngv_gridSpacing" format="dimension"/>
+        <attr name="ngv_maxSize" format="integer"/>
+        <attr name="ngv_mode" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="grid" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StarBar">
+        <!--星星间距-->
+        <attr name="starDistances" format="dimension" />
+        <!--星星大小-->
+        <attr name="starSizes" format="dimension" />
+        <!--星星个数-->
+        <attr name="starCounts" format="integer" />
+        <!--星星空图-->
+        <attr name="starEmptys" format="reference" />
+        <!--星星满图-->
+        <attr name="starFills" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AddWidget">
+        <attr name="circle_anim" format="boolean"/>
+        <attr name="sub_anim" format="boolean"/>
+    </declare-styleable>
+</resources>

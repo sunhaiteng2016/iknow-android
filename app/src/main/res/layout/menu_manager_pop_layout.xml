@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMenuManager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusable="true">
+    <LinearLayout
+        android:id="@+id/llPopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="right"
+        >
+
+        <TextView
+            android:id="@+id/tvComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp14"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_border_round_blue"
+            android:gravity="center"
+            android:minWidth="@dimen/dp40"
+            android:paddingLeft="@dimen/dp2"
+            android:paddingRight="@dimen/dp2"
+            android:text="@string/complete"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp9"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvOrderDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp14"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_border_round_blue"
+            android:gravity="center"
+            android:minWidth="@dimen/dp40"
+            android:paddingLeft="@dimen/dp2"
+            android:paddingRight="@dimen/dp2"
+            android:text="@string/order_delete"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp9" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp5"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fork" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/common_line_color"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/icon_already_subscribe"
+            android:text="@string/already_subscribe"
+            android:textColor="@color/grey15"
+            android:drawablePadding="@dimen/dp4"
+            android:textSize="@dimen/sp16" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@color/common_line_color"/>
+    </LinearLayout>
+
+
+
+    <com.beyond.popscience.widget.draggridview.DragGridView
+        android:id="@+id/dgvSubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/dp6"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dp4" />
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp5"
+        android:background="@color/comm_gray_bg"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/dp10">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/common_line_color"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/icon_un_subscribe"
+            android:text="@string/no_subscribe"
+            android:drawablePadding="@dimen/dp4"
+            android:textColor="@color/grey15"
+            android:textSize="@dimen/sp16" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@color/common_line_color"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gvNoSubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/dp6"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dp4"  />
+    <View
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

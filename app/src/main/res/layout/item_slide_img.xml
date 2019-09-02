@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bannerReLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:maxHeight="250dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <com.beyond.popscience.frame.view.AutoViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="160dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sp30"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.7"
+            android:background="@drawable/jianbian">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.7"
+                android:background="@drawable/jianbian"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingTop="@dimen/dp4"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textSize="@dimen/sp16" />
+
+                <com.beyond.popscience.widget.RecyclingCirclePageIndicator
+                    android:id="@+id/recycleIndicator"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_gravity="left|center_vertical"
+                    android:padding="@dimen/dp2" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

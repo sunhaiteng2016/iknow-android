@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/bgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#e0e0e0"
+        android:layout_above="@+id/btnLinLay"
+        />
+
+    <RelativeLayout
+        android:id="@+id/btnLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/wheelViewLinLay"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/cancelTxtView"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp16"
+            />
+
+        <TextView
+            android:id="@+id/okTxtView"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp16"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wheelViewLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#f5f6f7"
+        >
+
+        <com.beyond.popscience.widget.wheelview.WheelView
+            android:id="@+id/cultureWheelView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

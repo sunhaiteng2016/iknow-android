@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60">
+
+        <RelativeLayout
+            android:id="@+id/rlss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp10"
+                android:text="通讯录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_pop"
+            android:layout_width="@dimen/sp35"
+            android:layout_height="@dimen/sp35"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/sp15"
+            android:layout_marginBottom="@dimen/dp4"
+            android:padding="@dimen/dp8"
+            android:src="@drawable/tjhy" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_sarech"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="#f3f3f3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp30"
+                android:src="@drawable/shousuo11" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f3f3f3"
+                android:hint="搜索"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <include layout="@layout/item_head_address_list" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/et_clear" />
+
+            <TextView
+                android:id="@+id/tv_alphabet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_clear"
+                android:background="#f3f3f3"
+                android:padding="10dp"
+                android:textColor="#333"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <com.beyond.popscience.module.home.fragment.view.ClearEditText
+                android:id="@+id/et_clear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rel_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="80dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ff8c"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+                <ListView
+                    android:id="@+id/lv_alphabet"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_notice"
+                    android:background="#FF46285b"
+                    android:divider="@null"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.beyond.popscience.module.home.fragment.view.SideLetterBar
+        android:id="@+id/sideLetterBar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="#f3f3f3" />
+</LinearLayout>

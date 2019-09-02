@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toplayout" />
+
+    <TextView
+        android:id="@+id/sys"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp18"
+        android:paddingRight="@dimen/dp18"
+        android:text="扫一扫"
+        android:drawableRight="@drawable/arrow_right"
+        android:textColor="@color/grey17"
+        android:textSize="@dimen/sp16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp18"
+        android:background="@color/common_line_color" />
+    <TextView
+        android:id="@+id/setting_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp18"
+        android:paddingRight="@dimen/dp18"
+        android:text="设置支付密码"
+        android:drawableRight="@drawable/arrow_right"
+        android:textColor="@color/grey17"
+        android:textSize="@dimen/sp16" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/forgetPwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp18"
+        android:paddingRight="@dimen/dp18"
+        android:text="忘记支付密码"
+        android:drawableRight="@drawable/arrow_right"
+        android:textColor="@color/grey17"
+        android:textSize="@dimen/sp16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp18"
+        android:background="@color/common_line_color"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp18"
+        android:background="@color/common_line_color"
+        />
+    <TextView
+        android:id="@+id/my_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp18"
+        android:paddingRight="@dimen/dp18"
+        android:text="我的二维码"
+        android:drawableRight="@drawable/arrow_right"
+        android:textColor="@color/grey17"
+        android:textSize="@dimen/sp16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp18"
+        android:background="@color/common_line_color"
+        />
+    <TextView
+        android:id="@+id/zzjl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp18"
+        android:paddingRight="@dimen/dp18"
+        android:text="转账记录"
+        android:drawableRight="@drawable/arrow_right"
+        android:textColor="@color/grey17"
+        android:textSize="@dimen/sp16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp18"
+        android:background="@color/common_line_color"
+        />
+</LinearLayout>

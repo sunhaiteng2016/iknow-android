@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tl="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/grey4"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp8">
+
+        <RelativeLayout
+            android:id="@+id/topReLay"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#3598DA">
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_back"
+                android:drawablePadding="@dimen/dp5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:maxWidth="150dp"
+                android:paddingLeft="@dimen/dp16"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/town"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/leftTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp45"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow_down_white"
+                android:drawablePadding="@dimen/dp5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:maxWidth="150dp"
+                android:paddingLeft="@dimen/dp16"
+                android:text="陈家岙"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp22" />
+
+            <ImageView
+                android:id="@+id/rightImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="@dimen/dp18"
+                android:src="@drawable/icon_search_white" />
+
+            <View
+                android:id="@+id/shadowView"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shadow_bottom_grey" />
+        </RelativeLayout>
+
+        <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/tabContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/ctlHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentScrim="#3598DA"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/service_header_two" />
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <com.beyond.popscience.frame.view.CustomCommonTabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    tl:tl_divider_color="@color/grey6"
+                    tl:tl_divider_width="@dimen/dp1"
+                    tl:tl_iconVisible="false"
+                    tl:tl_indicator_color="@color/blue"
+                    tl:tl_textBold="SELECT"
+                    tl:tl_textSelectColor="@color/black"
+                    tl:tl_textUnselectColor="@color/grey17"
+                    tl:tl_textsize="17sp" />
+            </android.support.design.widget.AppBarLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/publishedLinLay"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:src="@drawable/icon_publish" />
+
+        <TextView
+            android:id="@+id/publishedTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bg_black_round2"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:text="发布"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp9" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_cancel">取消分享</string>
+    <string name="qq">QQ</string>
+    <string name="qzone">QQ空间</string>
+    <string name="sinaweibo">微博</string>
+    <string name="wechat">微信</string>
+    <string name="wechatmoments">朋友圈</string>
+    <string name="moreshare">好友</string>
+    <string name="link">乡镇</string>
+    <string name="articleshare">社团</string>
+</resources>

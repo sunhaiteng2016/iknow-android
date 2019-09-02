@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translate_half"
+    tools:context=".module.home.shopcart.ChoosePayTypeActivity">
+
+    <include layout="@layout/layout_title_01"/>
+    <TextView
+        android:id="@+id/tv_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray242"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="请选择支付方式"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="15.5dp"
+                    android:src="@drawable/ic_close2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll_zhifubao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="12.5dp"
+                    android:src="@drawable/ic_pay_alipay" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_weight="1"
+                    android:text="支付宝支付"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_zhifubao"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/ic_home_selected" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="12.5dp"
+                    android:src="@drawable/ic_pay_weixin" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_weight="1"
+                    android:text="微信支付"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_weixin"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/ic_home_unselected" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@color/gray242" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_yue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ic_pay_yue" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_weight="1"
+                        android:text="乐宝支付"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_yue"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@drawable/ic_home_unselected" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15.5dp"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_yue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ic_pay_yue" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_weight="1"
+                        android:text="乐贝支付"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_yue2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@drawable/ic_home_unselected" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15.5dp"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_yue3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ic_pay_yue" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_weight="1"
+                        android:text="乐点支付"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_yue3"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@drawable/ic_home_unselected" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="15.5dp"
+                    android:background="@color/gray242" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pay_pop"
+            android:layout_width="match_parent"
+            android:layout_height="39.5dp"
+            android:background="@color/blue2"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</RelativeLayout>

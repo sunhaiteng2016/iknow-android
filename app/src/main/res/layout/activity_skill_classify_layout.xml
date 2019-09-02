@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toplayout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/comm_gray_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/selectTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="所有分类"
+                    android:textColor="@color/grey3"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/oneLevelListView"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="match_parent"
+                    android:background="@color/comm_gray_bg"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/lineColor"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@color/transparent"
+                    android:scrollbars="none" />
+
+                <ListView
+                    android:id="@+id/twoLevelListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:clipToPadding="false"
+                    android:divider="@color/themeGrey"
+                    android:dividerHeight="1dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/dp15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/emptyReLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:background="@color/grey4"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/reLoadImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/refresh_progress_grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reLoadImgView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="点击屏幕，重新加载"
+                android:textColor="#c1c1c1"
+                android:textSize="@dimen/sp18" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

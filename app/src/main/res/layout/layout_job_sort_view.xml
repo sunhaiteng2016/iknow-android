@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:divider="@drawable/layout_divider_vertical"
+    android:dividerPadding="10dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:id="@+id/addressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="地点"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/addressImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:src="@drawable/arrow_down_grey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/positionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/positionTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="职位"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/positionImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:src="@drawable/arrow_down_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/educationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/educationTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="学历"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/educationImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:src="@drawable/arrow_down_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/priceTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="工资"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/priceImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrow_down_grey" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

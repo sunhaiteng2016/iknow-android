@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/flChange"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60">
+
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/tl"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                tl:tl_iconGravity="TOP"
+                tl:tl_iconHeight="18dp"
+                tl:tl_iconMargin="5dp"
+                tl:tl_iconWidth="18dp"
+                tl:tl_textSelectColor="#2C97DE"
+                tl:tl_textUnselectColor="#66000000"
+                tl:tl_textsize="@dimen/sp12" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/shape_main_home"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="首页"
+                    android:textColor="@color/shape_bottom_color"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_bdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/shape_main_home"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="实体店"
+                    android:textColor="@color/shape_bottom_color"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_xx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/shape_main_msg"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="消息"
+                    android:textColor="@color/shape_bottom_color"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_fw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/shape_main_servier"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textColor="@color/shape_bottom_color"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_txl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/shape_main_txl"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="通讯录"
+                    android:textColor="@color/shape_bottom_color"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_wd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/shape_main_my"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="我的"
+                    android:textColor="@color/shape_bottom_color"
+                    android:textSize="11sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/ease_unread_count_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp10"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp53"
+            android:layout_height="@dimen/dp53"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/fuwu" />
+    </RelativeLayout>
+
+</LinearLayout>

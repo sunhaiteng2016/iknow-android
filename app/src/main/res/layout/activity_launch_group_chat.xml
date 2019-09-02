@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.beyond.popscience.module.home.LaunchGroupChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp65">
+
+        <include  layout="@layout/public_toolbar"/>
+        <TextView
+            android:layout_marginBottom="@dimen/dp6"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/releases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@color/blue"
+            android:padding="8dp"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp20"
+                android:src="@drawable/soushou" />
+
+            <com.beyond.popscience.module.home.fragment.view.ClearEditText
+                android:id="@+id/et_clear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="请输入关键字"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl1" />
+
+
+        <TextView
+            android:id="@+id/tv_alphabet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:background="#f3f3f3"
+            android:padding="10dp"
+            android:textColor="#333"
+            android:textSize="16dp" />
+
+
+        <com.beyond.popscience.module.home.fragment.view.SideLetterBar
+            android:id="@+id/sideLetterBar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_alphabet"
+            android:layout_alignParentRight="true"
+            android:background="#f3f3f3" />
+
+        <RelativeLayout
+            android:id="@+id/rel_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="80dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <ListView
+                android:id="@+id/lv_alphabet"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_notice"
+                android:background="#FF46285b"
+                android:divider="@null"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

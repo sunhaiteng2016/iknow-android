@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey4"
+    >
+
+    <ImageView
+        android:id="@+id/picImgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_bg_img_loading"
+        />
+
+    <include
+        layout="@layout/common_toplayout"
+        />
+
+    <LinearLayout
+        android:id="@+id/introDetailLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/picImgView"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#f1f1f1"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_detail_black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp16"
+            android:textColor="#4b5055"
+            android:text="圈子介绍"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#f1f1f1"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contentTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/introDetailLinLay"
+        android:layout_above="@+id/bottomBtn"
+        android:scrollbars="vertical"
+        android:textColor="#4a4a4a"
+        android:textSize="@dimen/sp12"
+        />
+
+    <TextView
+        android:id="@+id/bottomBtn"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_red_round"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/sp21"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="申请加入"
+        />
+
+</RelativeLayout>

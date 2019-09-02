@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey4"
+    android:paddingLeft="14dp"
+    android:paddingTop="12dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="12dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp10"
+        android:id="@+id/contextTxtViewss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img"
+        android:autoLink="web|email|phone"
+        android:lineSpacingExtra="10dp"
+        android:textColor="#6a6a6a"
+        android:text="张三"
+        android:textSize="@dimen/sp16" />
+
+</RelativeLayout>

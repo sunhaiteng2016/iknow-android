@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topReLay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3598DA">
+        <TextView
+            android:text="社团"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp22" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_back"
+            android:drawableLeft="@drawable/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dp5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxWidth="150dp"
+            android:paddingLeft="@dimen/dp16"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp50"
+            android:id="@+id/leftTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dp5"
+            android:drawableRight="@drawable/arrow_down_white"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxWidth="150dp"
+            android:paddingLeft="@dimen/dp16"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <ImageView
+            android:id="@+id/rightImgView"
+            android:layout_width="39dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/dp45"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp18"
+            android:src="@drawable/icon_search_white" />
+
+        <View
+            android:id="@+id/shadowView"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_bottom_grey" />
+
+    </RelativeLayout>
+
+    <com.beyond.library.view.pullrefresh.PullToRefreshSwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

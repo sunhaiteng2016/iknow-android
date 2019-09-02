@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Activity切换动画 -->
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item><!-- 当前activity打开时，进入的activity的动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item><!-- 当前activity关闭时，进入的activity的动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item><!-- 当前activity打开时，退出的activity的动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item><!-- 当前activity关闭时，退出的activity的动画 -->
+    </style>
+
+
+    <style name="AnimationAlphaActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/alpha_enter</item><!-- 当前activity打开时，进入的activity的动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/alpha_enter</item><!-- 当前activity关闭时，进入的activity的动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/alpha_exit</item><!-- 当前activity打开时，退出的activity的动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/alpha_exit</item><!-- 当前activity关闭时，退出的activity的动画 -->
+    </style>
+
+    <style name="AnimationPushDownInActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_down_in_p</item><!-- 当前activity打开时，进入的activity的动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/push_down_in_p</item><!-- 当前activity关闭时，进入的activity的动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/push_up_out_p</item><!-- 当前activity打开时，退出的activity的动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/push_up_out_p</item><!-- 当前activity关闭时，退出的activity的动画 -->
+    </style>
+
+    <style name="AnimationPushUpInActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_up_in_p</item><!-- 当前activity打开时，进入的activity的动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/push_up_in_p</item><!-- 当前activity关闭时，进入的activity的动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/push_down_out_p</item><!-- 当前activity打开时，退出的activity的动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/push_down_out_p</item><!-- 当前activity关闭时，退出的activity的动画 -->
+    </style>
+
+
+    <!-- 无标题栏的theme 默认有切换动画 -->
+    <style name="ThemeNoTitleAnimActivity" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue2</item>
+        <item name="colorAccent">@color/blue2</item>
+        <!--<item name="android:textColorSecondary">@color/default_grey</item>-->
+    </style>
+
+    <!-- 无标题栏切换动画背景半透明的theme -->
+    <style name="ThemeNoTitleNoAnimThTransparentActivity" parent="@style/ThemeNoTitleAnimActivity">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_half</item>
+    </style>
+
+    <!-- 无标题栏切换动画背景全透明的theme -->
+    <style name="ThemeNoTitleNoAnimTransparentActivity" parent="@style/ThemeNoTitleNoAnimThTransparentActivity">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!-- Activity模拟Dialog -->
+    <style name="ActivityDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Aplha动画Dialog-->
+    <style name="ActivityDialogAlphaAnim" parent="ActivityDialog">
+        <item name="android:windowAnimationStyle">@style/AnimationAlphaActivity</item>
+    </style>
+
+    <style name="ActivityDialogPushDownInAnim" parent="ActivityDialog">
+        <item name="android:windowAnimationStyle">@style/AnimationPushDownInActivity</item>
+    </style>
+
+    <style name="ActivityDialogPushUpInAnim" parent="ActivityDialog">
+        <item name="android:windowAnimationStyle">@style/AnimationPushUpInDialog</item>
+    </style>
+
+    <!-- 无动画Dialog -->
+    <style name="ActivityDialogNoAnim" parent="ActivityDialog">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+    <!-- 全屏的Dialog -->
+    <style name="FullScreenDialogStyle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="BaseActivityConfiguration" parent="Base.Theme.AppCompat">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActTheme" parent="BaseActivityConfiguration">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    // values-v21。5.0 以上提供了 setStatusBarColor()  方法设置状态栏颜色。
+    <style name="TranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        //隐藏状态栏
+        <item name="windowActionBar">false</item>
+        //隐藏标题栏
+        <item name="windowNoTitle">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+    </style>
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_full</item>
+        <item name="android:paddingLeft">4dp</item>
+    </style>
+
+</resources>

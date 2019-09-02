@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_intro_black"
+            />
+
+        <EditText
+            android:id="@+id/goodsDescEditTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:background="@color/transparent"
+            android:gravity="top|left"
+            android:hint="详情描述1"
+            android:textColorHint="#9b9b9b"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"
+            android:inputType="textMultiLine"
+            />
+
+    </LinearLayout>
+
+    <com.beyond.popscience.frame.view.DragLinearView
+        android:id="@+id/dragLinearView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

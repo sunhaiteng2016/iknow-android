@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/bg" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp4"
+        android:text="台灯"
+        android:textColor="#4a4a4a"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tv_green_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp4"
+        android:text="20000绿币"
+        android:textColor="@color/red4"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/index_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp4"
+        android:background="@drawable/bg_border_round_red"
+        android:padding="@dimen/dp4"
+        android:paddingEnd="@dimen/dp30"
+        android:paddingStart="@dimen/dp30"
+        android:text="兑换"
+        android:textColor="@color/red4"
+        android:textSize="@dimen/sp12" />
+</LinearLayout>

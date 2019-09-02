@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="30dp"
+    android:background="@color/white"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarImgView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/default_header_icon"
+        />
+
+    <RelativeLayout
+        android:id="@+id/infoReLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_toRightOf="@+id/avatarImgView"
+        >
+
+        <TextView
+            android:id="@+id/replyTipTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/timeStampTxtView"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/sp13"
+            android:textColor="#9B9B9B"
+            android:text="意外意外 回复 你"
+            />
+
+        <TextView
+            android:id="@+id/timeStampTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp12"
+            android:textColor="#9B9B9B"
+            android:text="4小时前"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commentContentTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoReLay"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/sp12"
+        android:textColor="#4a4a4a"
+        android:text="当前温度群无多群无多当前温度群无多群无多当前温度群无多群无多当前温度群无多群无多当前温度群无多群无多当前温度群无多群无多当前温度群无多群无多"
+        />
+
+</RelativeLayout>

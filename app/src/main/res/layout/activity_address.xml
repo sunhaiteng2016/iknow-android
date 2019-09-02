@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beyond.popscience.module.home.shopcart.AddressActivity">
+
+    <include layout="@layout/layout_title_01"/>
+    <com.beyond.library.view.pullrefresh.PullToRefreshRecycleView
+        android:id="@+id/pull_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <include layout="@layout/empty_layout"/>
+    <RelativeLayout
+        android:id="@+id/rl_address_null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/img_address_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_address_null"
+            android:layout_marginTop="114.5dp" />
+        <TextView
+            android:layout_below="@+id/img_address_null"
+            android:layout_marginTop="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray153"
+            android:textSize="14dp"
+            android:text="您还没有收货地址，请新增地址"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue2"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:text="新增收货地址"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+</LinearLayout>

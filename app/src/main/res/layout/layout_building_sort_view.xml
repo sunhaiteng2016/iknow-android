@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:divider="@drawable/layout_divider_vertical"
+    android:dividerPadding="10dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:id="@+id/classifyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/classifyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="类别"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/classifyImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:src="@drawable/arrow_down_grey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/priceTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="价格"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/priceImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:src="@drawable/arrow_down_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/areaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/areaTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="面积"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/areaImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:src="@drawable/arrow_down_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tradeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tradeTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="更多"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/tradeImageView"
+            android:layout_width="6dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrow_right" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

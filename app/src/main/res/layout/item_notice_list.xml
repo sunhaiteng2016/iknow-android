@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dp10"
+    android:id="@+id/rlNoticeItem"
+    android:layout_marginBottom="@dimen/dp10"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#4a4a4a"
+        android:text="hahhaha"/>
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9b9b9b"
+        android:textSize="8sp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="@dimen/dp12"
+        android:text="hahah"/>
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dp5"
+        android:paddingRight="@dimen/dp5"
+        android:paddingTop="@dimen/dp2"
+        android:paddingBottom="@dimen/dp2"
+        android:background="@drawable/tip_bg_round"
+        android:textSize="8sp"
+        android:text="hahahhaha"/>
+
+</RelativeLayout>

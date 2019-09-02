@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/contentReLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/okImgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/contentReLay"
+        android:layout_alignBottom="@+id/contentReLay"
+        android:background="#59000000"
+        android:scaleType="center"
+        android:src="@drawable/icon_ok_blue"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey4"
+    >
+
+    <include
+        layout="@layout/common_toplayout"
+        />
+
+    <com.beyond.library.view.pullrefresh.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        >
+    </com.beyond.library.view.pullrefresh.PullToRefreshListView>
+
+</LinearLayout>

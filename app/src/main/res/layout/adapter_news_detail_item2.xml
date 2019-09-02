@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey4"
+    >
+
+    <ImageView
+        android:layout_marginTop="@dimen/dp4"
+        android:id="@+id/picImgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:background="@drawable/default_bg_img_loading" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llWebContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:background="#3598DA">
+
+        <ImageView
+            android:paddingRight="@dimen/dp15"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/fenxiang" />
+
+        <TextView
+            android:paddingLeft="@dimen/dp8"
+            android:paddingRight="@dimen/dp15"
+            android:layout_toLeftOf="@+id/iv_share"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/leftTxtView"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/dp8"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@color/transparent"
+            android:onClick="backClick"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/leftTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/ib_back"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/dp10"
+            android:text="关闭    "
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            android:id="@+id/shadowView"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_bottom_grey" />
+    </RelativeLayout>
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

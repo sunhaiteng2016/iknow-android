@@ -1,0 +1,3 @@
+<resources>
+    <string name="custom_appbar_scrolling_view_behavior">com.beyond.popscience.frame.view.behavior.CustomScrollingViewBehavior</string>
+</resources>

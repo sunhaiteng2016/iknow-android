@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:divider="@drawable/layout_divider_vertical"
+    android:dividerPadding="10dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:id="@+id/allLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/allTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="综合"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/allImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:src="@drawable/arrow_top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/distanceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/distanceTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="距离"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/classifyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/classifyTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="类别"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/typeTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="筛选"
+            android:textColor="@color/grey17"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/typeImageView"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrow_top" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

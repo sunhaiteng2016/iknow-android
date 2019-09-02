@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.beyond.popscience.locationgoods.GoodsEvaluateActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/public_toolbar" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp10"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingTop="@dimen/dp20"
+            android:paddingBottom="@dimen/dp10"
+            android:text="发布"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:padding="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ceshi1111" />
+           <com.beyond.popscience.locationgoods.view.StarBar
+               android:id="@+id/startBar"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp20"
+                ratingbar:starCount="5"
+                ratingbar:starDistances="6dp"
+                ratingbar:starEmptys="@drawable/pingfe22x"
+                ratingbar:starFills="@drawable/pingfen2x"
+                ratingbar:starSizes="@dimen/sp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_fch"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="非常差"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/sp_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:padding="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/smail"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="满意"
+                    android:textColor="#333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll11"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/yiban"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20" />
+                <TextView
+                    android:textColor="#333"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="一般"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp30">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@drawable/manyi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="不满意"
+                    android:textColor="#333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#f3f3f3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"/>
+        <TextView
+            android:textColor="#333"
+            android:padding="@dimen/dp10"
+            android:text="填写评价"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/ed_edit"
+            android:textSize="@dimen/sp14"
+            android:hint="请在此处填写商品评价"
+            android:gravity="left|top"
+            android:background="@drawable/bg_f3_round"
+            android:padding="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150" />
+        <TextView
+            android:textColor="#333"
+            android:padding="@dimen/dp10"
+            android:text="添加图片"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.beyond.popscience.frame.view.DragLinearView
+            android:id="@+id/coverPicDragLinearView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

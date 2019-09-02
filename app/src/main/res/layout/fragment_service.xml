@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/llPublish"
+        android:layout_alignParentStart="true"
+        android:background="#5097d4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawablePadding="@dimen/dp5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxWidth="150dp"
+            android:paddingLeft="@dimen/dp16"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_marginRight="@dimen/dp20"
+            android:id="@+id/tvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_toLeftOf="@+id/leftTxtView"
+            android:layout_toRightOf="@+id/tv_back"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_round"
+            android:drawableLeft="@drawable/icon_search_black"
+            android:drawablePadding="18dp"
+            android:gravity="left|center_vertical"
+            android:hint="搜索"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="#9B9B9B"
+            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/leftTxtView"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp40"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:drawableRight="@drawable/arrow_down_white"
+            android:drawablePadding="@dimen/dp5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxWidth="150dp"
+            android:paddingLeft="@dimen/dp16"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+    </RelativeLayout>
+
+    <com.beyond.library.view.pullrefresh.PullToRefreshListView
+        android:id="@+id/gvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llHeader"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:divider="@color/comm_gray_bg"
+        android:dividerHeight="@dimen/dp2"
+        android:horizontalSpacing="@dimen/dp10"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/llPublish"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:src="@drawable/icon_publish" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bg_black_round2"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:text="发布商品"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp9" />
+
+    </LinearLayout>
+
+</RelativeLayout>

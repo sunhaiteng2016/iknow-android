@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/headerPicImgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/infoTipTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_round3"
+        android:layout_alignBottom="@+id/headerPicImgView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="19dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp11"
+        android:gravity="center"
+        android:text="5条信息"
+        />
+
+    <TextView
+        android:id="@+id/contentTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/infoTipTxtView"
+        android:layout_alignBottom="@+id/headerPicImgView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp10"
+        android:text="《戏剧之家》杂志是经国家新闻出版总署批准、面向国内外公开发行的大型政策指导与理论研究的学术期刊。由湖北省文学艺术联合会主管，湖北省戏剧家协会、今古传奇报刊集团联合主办。"
+        />
+
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerPicImgView"
+        android:background="#ffffff"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabIndicatorColor="#7cb1de"
+        app:tabMode="fixed"
+        app:tabTextColor="#4a4a4a"
+        app:tabSelectedTextColor="#4a4a4a"
+        >
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>

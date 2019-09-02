@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/common_toplayout"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_below="@+id/lineView2"
+        app:tabIndicatorColor="#7cb1de"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#4a4a4a"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="#4a4a4a"/>
+
+    <com.beyond.library.view.pullrefresh.PullToRefreshSwipeMenuListView
+        android:id="@+id/lvGoods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/comm_gray_bg"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:dividerHeight="10dp"/>
+
+</LinearLayout>

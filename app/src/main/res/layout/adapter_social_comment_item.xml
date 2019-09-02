@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="25dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarImgView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/default_header_icon"
+        />
+
+    <LinearLayout
+        android:id="@+id/infoLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_toRightOf="@+id/avatarImgView"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/authorTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/sp14"
+                android:textColor="#9B9B9B"
+                android:text="dq健康就好看阿萨德空间哈卡华师大打的阿斯达所大"
+                />
+
+            <TextView
+                android:id="@+id/timeStampTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/sp14"
+                android:textColor="#9B9B9B"
+                android:text="4小时前"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/replyLinLay"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="6dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/sp12"
+                android:textColor="#9b9b9b"
+                android:text="回复"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/praiseLinLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/praiseNumTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/sp12"
+                android:textColor="#9b9b9b"
+                android:text="0"
+                />
+
+            <ImageView
+                android:id="@+id/praiseImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:scaleType="center"
+                android:src="@drawable/icon_like"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/infoLinLay"
+        android:layout_alignLeft="@+id/infoLinLay"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:id="@+id/commentContentTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp12"
+            android:textColor="#4a4a4a"
+            android:lineSpacingExtra="1dp"
+            />
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#f1f1f1"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

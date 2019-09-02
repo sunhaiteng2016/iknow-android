@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp15"
+        android:text="填写物流信息"
+        android:textColor="#000"
+        android:textSize="@dimen/sp15"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#f3f3f3" />
+
+    <EditText
+        android:id="@+id/ed_wl_gs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="请填写收货人"
+        android:padding="@dimen/dp10"
+        android:singleLine="true"
+        android:textSize="@dimen/sp14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#f3f3f3" />
+
+    <EditText
+        android:id="@+id/ed_wl_dh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="请填写物流单号"
+        android:padding="@dimen/dp10"
+        android:singleLine="true"
+        android:textSize="@dimen/sp14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#f3f3f3" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="立即发货"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp15" />
+</LinearLayout>

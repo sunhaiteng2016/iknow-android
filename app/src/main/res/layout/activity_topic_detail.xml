@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey4"
+    >
+
+    <ImageView
+        android:id="@+id/topPicImgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test"
+        />
+
+    <com.beyond.library.view.pullrefresh.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        />
+
+    <RelativeLayout
+        android:id="@+id/topReLay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shadow_bottom_grey3"
+        >
+
+        <View
+            android:id="@+id/topBgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3598DA"
+            android:alpha="0"
+            />
+
+        <TextView
+            android:id="@+id/titleTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="科普•我知道"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_back"
+            android:onClick="backClick"
+            />
+
+        <ImageButton
+            android:id="@+id/shareImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_dots"
+            android:padding="20dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:src="@drawable/icon_publish"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:layout_marginRight="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/bg_black_round2"
+            android:textSize="@dimen/sp9"
+            android:textColor="#ffffff"
+            android:text="发布圈子"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/emptyReLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey4"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@+id/tmpTopRelay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#3598DA"
+            >
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@color/transparent"
+                android:src="@drawable/icon_back"
+                android:onClick="backClick"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/reLoadImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/refresh_progress_grey"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/reLoadImgView"
+            android:textColor="#c1c1c1"
+            android:textSize="@dimen/sp18"
+            android:text="点击屏幕，重新加载"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

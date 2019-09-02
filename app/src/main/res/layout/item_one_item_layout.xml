@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_goods"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_shangpinname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_guige"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/text"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/tv_danjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥0.00 "
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tv_add_num"
+                    android:gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/blue_light"
+                    android:textColor="@color/white"
+                    android:padding="8dp"
+                    android:textSize="@dimen/dp16"
+                    android:text="+" />
+                <TextView
+                    android:layout_toLeftOf="@+id/tv_add_num"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/tv_buynumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:background="@color/blue_light"
+                    android:textColor="@color/white"
+                    android:layout_toLeftOf="@+id/tv_buynumber"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="30dp"
+                    android:gravity="center"
+                    android:id="@+id/jian"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/dp16"
+                    android:padding="8dp"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

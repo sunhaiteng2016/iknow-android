@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toplayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="选择反馈类型" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp">
+
+        <CheckedTextView
+            android:id="@+id/produce_idea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableLeft="@drawable/selector_idea_check"
+            android:drawablePadding="10dp"
+            android:text="产品建议" />
+
+        <CheckedTextView
+            android:id="@+id/function_idea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkMark="@null"
+            android:drawableLeft="@drawable/selector_idea_check"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="功能建议" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f2f2f2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="请输入您的反馈,我们将为您不断改进" />
+
+    <EditText
+        android:id="@+id/content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_border_round_grey"
+        android:gravity="top|left"
+        android:hint="希望产品..."
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/contact_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_border_round_grey"
+        android:gravity="top|left"
+        android:hint="请填写您的手机或邮箱"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#f2f2f2" />
+
+    <Button
+        android:id="@+id/deposit_success_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_blue_corner"
+        android:text="提交意见或反馈"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

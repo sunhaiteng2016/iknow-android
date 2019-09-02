@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/common_toplayout" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:layout_below="@+id/topReLay"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/llCall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3697db"
+            android:gravity="center"
+            android:inputType="phone"
+            android:text="电话联系"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp14" />
+
+
+        <TextView
+            android:id="@+id/llShotMsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff9711"
+            android:gravity="center"
+            android:text="短信联系"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp14" />
+
+
+        <TextView
+            android:id="@+id/lxmj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#23a12f"
+            android:gravity="center"
+            android:inputType="phone"
+            android:text="在线咨询"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+</RelativeLayout>

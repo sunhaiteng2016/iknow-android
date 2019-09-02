@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_gray_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5097d4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:onClick="backClick"
+            android:src="@drawable/icon_back" />
+
+        <EditText
+            android:id="@+id/searchEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_round"
+            android:drawableLeft="@drawable/icon_search_black"
+            android:drawablePadding="18dp"
+            android:enabled="false"
+            android:gravity="left|center_vertical"
+            android:hint="搜索"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#9B9B9B"
+            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+            android:textSize="@dimen/sp16" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent2"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <com.beyond.popscience.widget.ServiceSortView
+        android:id="@+id/sortview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/white"
+        android:divider="@drawable/layout_divider_vertical"
+        android:dividerPadding="@dimen/dp15"
+        android:showDividers="middle" />
+
+    <com.beyond.library.view.pullrefresh.PullToRefreshRecycleView
+        android:id="@+id/lvGoods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/dp10"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:paddingTop="10dp"
+        android:paddingLeft="@dimen/dp5"
+        android:paddingRight="@dimen/dp5"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dp10"
+        />
+
+</LinearLayout>

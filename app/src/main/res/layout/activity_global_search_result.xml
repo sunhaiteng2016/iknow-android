@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey4"
+    >
+
+    <include
+        layout="@layout/common_toplayout"
+        />
+
+    <com.beyond.library.view.pullrefresh.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/emptyTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/grey9"
+        android:textSize="@dimen/sp19"
+        android:text="未搜索到相关资讯"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

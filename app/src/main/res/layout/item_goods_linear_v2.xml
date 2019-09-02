@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llGoods"
+    android:layout_width="match_parent"
+    android:layout_height="118dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp8"
+        app:cardCornerRadius="@dimen/dp4">
+
+        <ImageView
+            android:id="@+id/ivGoods"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop" />
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="@dimen/dp5"
+        android:paddingTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp5"
+        android:paddingBottom="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="搞事情搞事情"
+            android:textColor="@color/grey17"
+            android:textSize="@dimen/sp14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvAddress"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="搞事情~~"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布于5天前"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/verticalLineView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="|"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/distanceTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.00km"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="搞事情~~"
+            android:textColor="#9b9b9b"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="¥1222222"
+            android:textColor="#FF4200"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

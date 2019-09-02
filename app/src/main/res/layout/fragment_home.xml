@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llPopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/dp65"
+        android:background="@color/white"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp14"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_border_round_blue"
+            android:gravity="center"
+            android:minWidth="@dimen/dp40"
+            android:paddingLeft="@dimen/dp2"
+            android:paddingRight="@dimen/dp2"
+            android:text="@string/complete"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp9"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvOrderDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp14"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_border_round_blue"
+            android:gravity="center"
+            android:minWidth="@dimen/dp40"
+            android:paddingLeft="@dimen/dp2"
+            android:paddingRight="@dimen/dp2"
+            android:text="@string/order_delete"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp9" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp5"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fork" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivToTop"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="@dimen/dp65"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_to_top"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--可滑动的布局内容-->
+            <com.beyond.popscience.module.home.fragment.view.MyViewPager
+                android:id="@+id/vpView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/dingwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp25"
+                android:background="@drawable/bg_round3"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/dingwei"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/dingwei2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/kuhao"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qiandao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:orientation="vertical"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp6"
+                    >
+                    <ImageView
+                        android:id="@+id/ivSearch"
+                        android:layout_width="25dp"
+                        android:layout_height="@dimen/dp15"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/shousuo11" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/iv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:layout_weight="1">
+                    <TextView
+                        android:visibility="invisible"
+                        android:background="@drawable/bg_round3"
+                        android:id="@+id/tv_sign_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="签到"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_279"
+                        android:textSize="@dimen/sp15" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top_tab"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:alpha="0"
+            android:background="#3F9FE0"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="@dimen/dp10"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_search_white"
+                android:visibility="gone" />
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/slidTab"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                tl:tl_divider_color="@color/white"
+                tl:tl_divider_padding="@dimen/dp8"
+                tl:tl_divider_width="1dp"
+                tl:tl_indicator_width_equal_title="true"
+                tl:tl_textAllCaps="true"
+                tl:tl_textsize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="@dimen/dp10"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sign_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_sign_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:padding="@dimen/dp10"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_chacha"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/chacha" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="每日签到领绿币，连续签到7天有惊喜"
+                    android:textSize="@dimen/sp11" />
+
+                <TextView
+                    android:id="@+id/lx_sign"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="已连续签到0天"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+            <!-- <android.support.v7.widget.RecyclerView
+                 android:id="@+id/sign_rv"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:layout_marginTop="@dimen/dp10"
+                 android:layout_marginBottom="@dimen/dp10"
+                 />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:weightSum="7">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/oneDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_circle_gray"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/twoDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_circle_gray"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/threeDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_circle_gray"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fourDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_circle_gray"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fiveDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_circle_gray"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sixDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_circle_gray"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sevenDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_circle_gray"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:background="@color/grey4"
+    >
+
+    <TextView
+        android:id="@+id/contextTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp16"
+        android:autoLink="web|email|phone"
+        android:textColor="#6a6a6a"
+        android:lineSpacingExtra="10dp"
+        />
+
+</RelativeLayout>

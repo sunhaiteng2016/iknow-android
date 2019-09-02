@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="取消订单"
+            android:textColor="#333"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_del" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp2"
+            android:text="温馨提示"
+            android:textColor="#000"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp2"
+            android:text="1.如果取消订单，会降低您店铺的信用度"
+            android:textColor="#000"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp2"
+            android:text="2.如果订单拆分，对应商品退对应货款"
+            android:textColor="#000"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp2"
+            android:text="3.订单取消后，无法恢复"
+            android:textColor="#000"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:text="请选择取消原因(必填)"
+        android:textColor="#000"
+        android:textSize="@dimen/sp14" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp10">
+
+        <RadioButton
+            android:id="@+id/rb_reason1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:padding="@dimen/dp4"
+            android:text="没货了"
+            android:textColor="#333"
+            android:textSize="@dimen/sp13" />
+
+        <RadioButton
+            android:id="@+id/rb_reason2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:padding="@dimen/dp4"
+            android:text="天气原因，物流无法送达"
+            android:textColor="#333"
+            android:textSize="@dimen/sp13" />
+
+        <RadioButton
+            android:id="@+id/rb_reason3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:padding="@dimen/dp4"
+            android:text="快递无法按预订时间送达"
+            android:textColor="#333"
+            android:textSize="@dimen/sp13" />
+
+        <RadioButton
+            android:id="@+id/rb_reason4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:padding="@dimen/dp4"
+            android:text="其他原因"
+            android:textColor="#333"
+            android:textSize="@dimen/sp13" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:padding="@dimen/dp15"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</LinearLayout>

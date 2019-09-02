@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <include layout="@layout/common_toplayout" />
+
+        <ImageView
+            android:id="@+id/shareLinLay"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp25"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp10"
+            android:src="@drawable/zhuanfa" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvTeach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@color/comm_gray_bg"
+        android:dividerHeight="@dimen/dp5" />
+</LinearLayout>

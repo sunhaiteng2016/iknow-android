@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/positionTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="160dp"
+                android:text="注册会计师"
+                android:textColor="@color/grey17"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/industryTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/positionTxtView"
+                android:layout_toLeftOf="@+id/priceTxtView"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="房地产"
+                android:textColor="@color/blue2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/priceTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="12k－16k"
+                android:textColor="@color/red4"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="4dp"
+            android:id="@+id/applyerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/applyerTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="求职人："
+                android:textColor="@color/blue2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/applyerTxtView"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/applyerTip"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="@color/grey15"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/applyerTxtView"
+                android:id="@+id/applyerLayoutone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/applyerTipone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="学历："
+                    android:textColor="@color/blue2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/applyerTxtViewone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/applyerTipone"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="博士"
+                    android:textColor="@color/grey15"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/tvone"
+                    android:id="@+id/addressTxtViewone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="21岁"
+                    android:textColor="@color/grey15"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvone"
+                    android:layout_toRightOf="@+id/applyerTxtViewone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="年龄："
+                    android:textColor="@color/blue2"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/addressTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="西湖区余杭塘路222号"
+                android:textColor="@color/grey15"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvqwdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/timeTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2017-11-01"
+                android:textColor="@color/grey15"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

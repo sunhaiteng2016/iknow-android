@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cvHeader"
+        android:layout_width="@dimen/dp55"
+        android:layout_height="@dimen/dp55"
+        />
+
+    <TextView
+        android:id="@+id/circleAddressNameTxtView"
+        android:layout_width="@dimen/dp55"
+        android:layout_height="@dimen/dp55"
+        android:background="@drawable/bg_pale_orange_round"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20"
+        android:gravity="center"
+        android:text="看"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:maxLines="1"
+        android:text="搞事情"
+        android:textSize="@dimen/sp13" />
+
+</LinearLayout>

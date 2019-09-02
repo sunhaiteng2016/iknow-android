@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_gray_bg">
+    <com.beyond.library.view.pullrefresh.PullToRefreshListView
+        android:id="@+id/lvTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/comm_gray_bg"
+        android:scrollbars="none"
+        android:dividerHeight="@dimen/dp5"/>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">科普中国户户通</string>
+    <string-array name="tab_bottom">
+        <item>首页</item>
+        <item>乡镇</item>
+        <!--<item>圈子</item>-->
+        <item>服务</item>
+        <item>我的</item>
+    </string-array>
+    <string name="login_tel_hint">输入您的电话</string>
+    <string name="login_pwd_hint">输入您的密码</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="login_txt">登录</string>
+    <string name="no_count">没有账号？</string>
+    <string name="register_now">立即注册</string>
+    <string name="name">昵称</string>
+    <string name="phone">手机号</string>
+    <string name="send_code">发送验证码</string>
+    <string name="resend_code">重新发送</string>
+    <string name="code">验证码</string>
+    <string name="pwd">密码</string>
+    <string name="address">地址信息</string>
+    <string name="register">注册</string>
+    <string name="register_tip">创建一个新的账户</string>
+    <string name="cancel">取消</string>
+    <string name="location">所在地区</string>
+    <string name="location_detail">请填写详细的地址，不少于5个字</string>
+    <string name="hint_name">请输入用户名</string>
+    <string name="hint_phone">请输入手机号</string>
+    <string name="hint_code">请输入验证码</string>
+    <string name="hint_pwd">请输入密码(不少于6位数)</string>
+    <string name="add_location">添加地址</string>
+    <string name="complete">完成</string>
+    <string name="already_subscribe">已定阅栏目</string>
+    <string name="no_subscribe">未定阅栏目</string>
+    <string name="order_delete">排序删除</string>
+    <string name="personal_info">个人资料</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_integral_mall">绿币商城</string>
+    <string name="my_publish">我的发布</string>
+    <string name="my_requirement">我的需求</string>
+    <string name="check_update">检查更新</string>
+    <string name="fragment_my_help">帮助</string>
+    <string name="about_us">关于我们</string>
+    <string name="feedback">意见反馈</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="loginout">退出</string>
+    <string name="hint_old_pwd">输入原密码</string>
+    <string name="hint_new_pwd">输入新密码</string>
+    <string name="hint_confirm_new_pwd">再次输入新密码</string>
+    <string name="confirm">确定</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="find_pwd">找回账户密码</string>
+    <string name="submit">提交</string>
+    <string name="please_add_address">请添加地址</string>
+    <string name="send_code_error">验证码发送失败</string>
+    <string name="send_code_success">发送验证码成功</string>
+    <string name="register_success">注册成功</string>
+    <string name="phone_format_error">请输入正确的手机号</string>
+    <string name="please_input_login_info">请输入账户和密码</string>
+    <string name="login_success">登录成功</string>
+    <string name="pwd_dif">密码不一致</string>
+    <string name="pwd_change_suc">密码修改成功</string>
+    <string name="pwd_change_fail">密码修改失败</string>
+    <string name="please_new_pwd">请输入新密码</string>
+    <string name="please_new_pwd_again">请再次输入新密码</string>
+    <string name="from_photo">从手机相册选择</string>
+    <string name="from_camera">拍照</string>
+    <string name="camera_permission_error">打开摄像头失败，请尝试打开摄像头权限</string>
+    <string name="town">乡镇</string>
+    <string name="skill_time_address">发布于%1$s前%2$s</string>
+    <string name="price_month">¥%s元</string>
+    <string name="price_yuan">¥%s/月</string>
+    <string name="title_activity_integralmall">IntegralmallActivity</string>
+    <string name="dsv_ex_msg_dont_set_lm">You should not set LayoutManager on DiscreteScrollView.class instance. Library uses a special one. Just don\'t call the method.</string>
+    <string name="dsv_ex_msg_adapter_wrong_recycler">InfiniteScrollAdapter is supposed to work only with DiscreteScrollView</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="scroll_behavior">@string/appbar_scrolling_view_behavior</string>
+    <string name="detail_header_behavior">com.beyond.popscience.physicalstore.detail.DetailHeaderBehavior</string>
+    <string name="at_your_in_group">%s @ 你在群组说</string>
+</resources>

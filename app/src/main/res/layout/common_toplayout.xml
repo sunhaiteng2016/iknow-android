@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topReLay"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#3598DA">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp22" />
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:onClick="backClick"
+        android:src="@drawable/icon_back" />
+
+    <TextView
+        android:id="@+id/leftTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dp16"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/rightImgView"
+        android:layout_width="39dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/dp18"
+        android:src="@drawable/icon_search_white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingRight="@dimen/dp16"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        android:visibility="invisible"
+        />
+    <View
+        android:id="@+id/shadowView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow_bottom_grey" />
+
+</RelativeLayout>

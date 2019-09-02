@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.beyond.popscience.locationgoods.ShopOrderActivity">
+
+    <include layout="@layout/public_toolbar" />
+
+    <android.support.design.widget.TabLayout
+        android:background="@color/white"
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/blue"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabMode="scrollable"
+        android:layout_height="@dimen/dp40" />
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/public_list" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_zwsj"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/null_records"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="@dimen/dp_150" />
+            <TextView
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

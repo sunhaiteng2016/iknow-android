@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.beyond.popscience.locationgoods.SearchActivity">
+
+    <include layout="@layout/public_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_sarech"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="#f3f3f3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="#f3f3f3f3"
+            android:hint="搜索"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@drawable/shousuo11" />
+    </LinearLayout>
+
+    <include layout="@layout/public_list" />
+</LinearLayout>

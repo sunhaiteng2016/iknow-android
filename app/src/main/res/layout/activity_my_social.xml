@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey4"
+    >
+
+    <include layout="@layout/common_toplayout"/>
+
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_below="@+id/lineView2"
+        app:tabIndicatorColor="#7cb1de"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#4a4a4a"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="#4a4a4a"/>
+
+    <com.beyond.library.view.pullrefresh.PullToRefreshSwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

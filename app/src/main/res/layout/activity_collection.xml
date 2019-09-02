@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toplayout" />
+
+    <com.beyond.popscience.frame.view.CustomCommonTabLayout xmlns:tl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        tl:tl_divider_color="@color/grey6"
+        tl:tl_divider_width="@dimen/dp1"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_color="@color/blue"
+        tl:tl_textBold="SELECT"
+        tl:tl_textSelectColor="@color/black"
+        tl:tl_textUnselectColor="@color/grey17"
+        tl:tl_textsize="17sp" />
+
+    <View
+        android:id="@+id/shadowView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_bottom_grey" />
+
+    <FrameLayout
+        android:id="@+id/tabContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

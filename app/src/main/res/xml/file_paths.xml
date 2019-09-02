@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path path="Android/data/com/hyphenate/chatuidemo/" name="files_root" />
+    <external-path path="." name="external_storage_root" />
+    <files-path name="name" path="path"/>
+    <!--<external-cache-path name="cache_download" path="download"/>-->
+
+    <cache-path name="name" path="path" /> <!--getCacheDir()-->
+    <external-files-path name="name" path="path" /><!--表示应用程序外部存储区域根目录中的文件。
+该子目录的根路径与Context＃getExternalFilesDir（String）Context.getExternalFilesDir（null）返回的值相同。-->
+    <external-cache-path name="name" path="path" /><!--Context.getExternalCacheDir()-->
+
+</paths>

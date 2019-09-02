@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp4"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:id="@+id/img"
+        android:layout_width="@dimen/sp35"
+        android:layout_height="@dimen/sp35" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="#333"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/verify"
+        android:maxWidth="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="#666"
+        android:textSize="@dimen/sp12" />
+    <TextView
+        android:visibility="gone"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="已申请"
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingTop="4dp"
+            android:paddingRight="@dimen/dp16"
+            android:paddingBottom="4dp"
+            android:text="拒绝"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:background="@color/blue"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingTop="4dp"
+            android:paddingRight="@dimen/dp16"
+            android:paddingBottom="4dp"
+            android:text="同意"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+</RelativeLayout>

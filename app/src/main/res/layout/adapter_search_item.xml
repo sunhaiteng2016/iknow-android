@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/picImgView"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/test"
+                />
+
+            <TextView
+                android:id="@+id/titleTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/picImgView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15"
+                android:text="多渠道群多群无当前温度期望的期望的多渠道群多群无当前温度期望的期望的多渠道群多群无当前温度期望的期望的多渠道群多群无当前温度期望的期望的"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_grey2"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_below="@+id/titleTxtView"
+                android:layout_toRightOf="@+id/picImgView"
+                android:layout_marginTop="5dp"
+                android:textColor="#979797"
+                android:textSize="@dimen/sp11"
+                android:gravity="center"
+                android:text="科普中国我知道"
+                />
+
+            <TextView
+                android:id="@+id/timeStampTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/picImgView"
+                android:layout_alignBottom="@+id/picImgView"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/sp12"
+                android:text="2017-10-11 11:10"
+                />
+
+            <TextView
+                android:id="@+id/viewLabelTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/timeStampTxtView"
+                android:layout_alignTop="@+id/timeStampTxtView"
+                android:layout_alignBottom="@+id/timeStampTxtView"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/sp12"
+                android:text="view: "
+                />
+
+            <TextView
+                android:id="@+id/viewTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/viewLabelTxtView"
+                android:layout_alignTop="@+id/viewLabelTxtView"
+                android:layout_alignBottom="@+id/viewLabelTxtView"
+                android:layout_marginRight="10dp"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/sp12"
+                android:text="11111"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

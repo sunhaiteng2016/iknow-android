@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.beyond.popscience.module.point.MakePointActivity">
+
+    <include layout="@layout/common_toplayout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/read_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/read_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="阅读文章"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/read_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/read_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="认真阅读文章可获得1绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/read_article_tv"
+                    android:text="+1绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即阅读"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/share_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/share_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="分享文章"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/share_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/share_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="分享文章给好友，每篇可得1绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/share_article_tv"
+                    android:text="+1绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即分享"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/fab_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/fab_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="发布评论"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/fab_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fab_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="发布文章，每篇可获得1绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/fab_article_tv"
+                    android:text="+1绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即发布"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/agree_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/agree_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="意见反馈"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/agree_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/agree_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="意见反馈可得1绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/agree_article_tv"
+                    android:text="+1绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即反馈"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/join_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/join_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="参与活动"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/join_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/join_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="参与活动可获得10绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_join"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/join_article_tv"
+                    android:text="+10绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_join"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即参与"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/shop_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/shop_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="购物"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/shop_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="在本App购物可得1绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/shop_article_tv"
+                    android:text="+1绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即参与"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/invitation_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/invitation_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="邀请收徒"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/invitation_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/invitation_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="分享App可得5绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_invitation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/invitation_article_tv"
+                    android:text="+5绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_invitation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即邀请"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/answer_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/answer_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="互动回答"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/answer_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/answer_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="互动答题可得3绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/answer_article_tv"
+                    android:text="+3绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即答题"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabu_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/fabu_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="发布动态"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/fabu_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fabu_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="发布动态可得1绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/fabu_article_tv"
+                    android:text="+1绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即发布"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/like_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/like_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="点赞"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/like_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/like_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="点赞可得1绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/like_article_tv"
+                    android:text="+1绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="立即点赞"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/sign_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/sign_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="签到"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/sign_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sign_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="连续签到7天最高可得7绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/sign_article_tv"
+                    android:text="+30绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="签到"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/sun_article_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/sun_article_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="晒收入"
+                    android:textColor="@color/text51"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/sun_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sun_article_tv"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="晒收入可得1绿币"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/get_point_num_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/sun_article_tv"
+                    android:text="+1绿币"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/right_read_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/btn_bg_red"
+                    android:gravity="center"
+                    android:text="晒一晒"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
